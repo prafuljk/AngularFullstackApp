@@ -30,7 +30,6 @@ public class EmployeeController {
 	private EmployeeRepository employeeRepository;
 	
 	//get All employees
-	
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
 		return employeeRepository.findAll();
