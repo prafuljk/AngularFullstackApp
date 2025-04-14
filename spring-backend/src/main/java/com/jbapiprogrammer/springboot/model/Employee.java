@@ -23,6 +23,9 @@ public class Employee {
 	@Column(name= "email_id")
 	private String emailId;
 	
+	@Column(name= "mobile")
+	private String mobile;
+
 	public Employee() {
 		
 	}
@@ -32,6 +35,7 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;	
 		this.emailId = emailId;
+		this.mobile=mobile;
 	}
 	
 	public long getId() {
@@ -59,8 +63,12 @@ public class Employee {
 		this.emailId = emailId;
 	}
 	
-	
-	
-	
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
 
 }
